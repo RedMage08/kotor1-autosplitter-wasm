@@ -7,7 +7,7 @@ An auto splitter for Star Wars: Knights of the Old Republic.
 
 ## Release
 
-Latest version will always be found at https://github.com/RedMage08/kotor1-autosplitter-wasm/releases/latest/download/k1.wasm
+Latest version will always be found [here](https://github.com/RedMage08/kotor2-autosplitter-wasm/releases/latest/download/kotor1.wasm)
 
 ## Compilation
 
