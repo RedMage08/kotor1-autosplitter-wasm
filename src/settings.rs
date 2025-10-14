@@ -817,52 +817,194 @@ pub struct Settings {
 
     // MISC
 
-    /// Miscellaneous Splits
-    title_misc: Title,
+      /// Miscellaneous Splits
+    title_misc_main: Title,
 
-    /// MISC_CREDITS - Credits
+    /// LIV_M99AA - Yavin Station
     #[default = false]
-    pub MISC_CREDITS: bool,
+    pub LIV_M99AA: bool,
 
-    /// MISC_CREDITS - Credits Unlimited Splits
+    /// LIV_M99AA - Yavin Station Unlimited Splits
     #[default = false]
-    pub MISC_CREDITS_unlim: bool,
+    pub LIV_M99AA_unlim: bool,
 
-    /// MISC_PRELUDE - Prelude
+    /// STUNT_00 - Dream Sequence
     #[default = false]
-    pub MISC_PRELUDE: bool,
+    pub STUNT_00: bool,
 
-    /// MISC_PRELUDE - Prelude Unlimited Splits
+    /// STUNT_00 - Dream Sequence Unlimited Splits
     #[default = false]
-    pub MISC_PRELUDE_unlim: bool,
+    pub STUNT_00_unlim: bool,
 
-    /// MISC_TUTORIAL - Tutorial
+    /// STUNT_03A - Taris Leviathan Bridge Cutscene
     #[default = false]
-    pub MISC_TUTORIAL: bool,
+    pub STUNT_03A: bool,
 
-    /// MISC_TUTORIAL - Tutorial Unlimited Splits
+    /// STUNT_03A - Taris Leviathan Bridge Cutscene Unlimited Splits
     #[default = false]
-    pub MISC_TUTORIAL_unlim: bool,
+    pub STUNT_03A_unlim: bool,
 
-    /// MISC_JEDITEST - Jedi Test
+    /// STUNT_06 - Taris Destroyed Cutscene
     #[default = false]
-    pub MISC_JEDITEST: bool,
+    pub STUNT_06: bool,
 
-    /// MISC_JEDITEST - Jedi Test Unlimited Splits
+    /// STUNT_06 - Taris Destroyed Cutscene Unlimited Splits
     #[default = false]
-    pub MISC_JEDITEST_unlim: bool,
+    pub STUNT_06_unlim: bool,
 
-    /// MISC_EARLYACCESS - Early Access
+    /// STUNT_07 - Escaping Taris Conversation
     #[default = false]
-    pub MISC_EARLYACCESS: bool,
+    pub STUNT_07: bool,
 
-    /// MISC_EARLYACCESS - Early Access Unlimited Splits
+    /// STUNT_07 - Escaping Taris Conversation Unlimited Splits
     #[default = false]
-    pub MISC_EARLYACCESS_unlim: bool,
+    pub STUNT_07_unlim: bool,
 
-    // Extra ASL boolean used in special-case splitting
+    /// M12AB - Ebon Hawk Gunner
+    #[default = false]
+    pub M12AB: bool,
 
-    /// Bastila Saved
+    /// M12AB - Ebon Hawk Gunner Unlimited Splits
+    #[default = false]
+    pub M12AB_unlim: bool,
+
+    /// STUNT_12 - Calo Nord Leviathan Cutscene
+    #[default = false]
+    pub STUNT_12: bool,
+
+    /// STUNT_12 - Calo Nord Leviathan Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_12_unlim: bool,
+
+    /// STUNT_14 - Darth Bandon Leviathan Cutscene
+    #[default = false]
+    pub STUNT_14: bool,
+
+    /// STUNT_14 - Darth Bandon Leviathan Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_14_unlim: bool,
+
+    /// STUNT_16 - Leviathan Capture Cutscene
+    #[default = false]
+    pub STUNT_16: bool,
+
+    /// STUNT_16 - Leviathan Capture Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_16_unlim: bool,
+
+    /// STUNT_19 - Star Forge Lehon Temple Cutscene
+    #[default = false]
+    pub STUNT_19: bool,
+
+    /// STUNT_19 - Star Forge Lehon Temple Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_19_unlim: bool,
+
+    /// EBO_M40AA - Leviathan Game Plan Cutscene
+    #[default = false]
+    pub EBO_M40AA: bool,
+
+    /// EBO_M40AA - Leviathan Game Plan Cutscene Unlimited Splits
+    #[default = false]
+    pub EBO_M40AA_unlim: bool,
+
+    /// STUNT_31B - Revan Reveal Cutscene
+    #[default = false]
+    pub STUNT_31B: bool,
+
+    /// STUNT_31B - Revan Reveal Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_31B_unlim: bool,
+
+    /// EBO_M40AD - Leviathan Escape Cutscene
+    #[default = false]
+    pub EBO_M40AD: bool,
+
+    /// EBO_M40AD - Leviathan Escape Cutscene Unlimited Splits
+    #[default = false]
+    pub EBO_M40AD_unlim: bool,
+
+    /// STUNT_18 - Bastilla Torture Cutscene
+    #[default = false]
+    pub STUNT_18: bool,
+
+    /// STUNT_18 - Bastilla Torture Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_18_unlim: bool,
+
+    /// STUNT_35 - Lehon Arrival Cutscene
+    #[default = false]
+    pub STUNT_35: bool,
+
+    /// STUNT_35 - Lehon Arrival Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_35_unlim: bool,
+
+    /// STUNT_42 - Lehon Departure Cutscene (LS)
+    #[default = false]
+    pub STUNT_42: bool,
+
+    /// STUNT_42 - Lehon Departure Cutscene (LS) Unlimited Splits
+    #[default = false]
+    pub STUNT_42_unlim: bool,
+
+    /// STUNT_44 - Lehon Departure Cutscene (DS)
+    #[default = false]
+    pub STUNT_44: bool,
+
+    /// STUNT_44 - Lehon Departure Cutscene (DS) Unlimited Splits
+    #[default = false]
+    pub STUNT_44_unlim: bool,
+
+    /// STUNT_34 - Star Forge Arrival Cutscene
+    #[default = false]
+    pub STUNT_34: bool,
+
+    /// STUNT_34 - Star Forge Arrival Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_34_unlim: bool,
+
+    /// STUNT_50A - Green Squadron Cutscene
+    #[default = false]
+    pub STUNT_50A: bool,
+
+    /// STUNT_50A - Green Squadron Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_50A_unlim: bool,
+
+    /// STUNT_54A - The Republic is Doomed Cutscene
+    #[default = false]
+    pub STUNT_54A: bool,
+
+    /// STUNT_54A - The Republic is Doomed Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_54A_unlim: bool,
+
+    /// STUNT_55A - All Hail Lord Revan Cutscene
+    #[default = false]
+    pub STUNT_55A: bool,
+
+    /// STUNT_55A - All Hail Lord Revan Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_55A_unlim: bool,
+
+    /// STUNT_56A - Star Forge Destroyed Cutscene
+    #[default = false]
+    pub STUNT_56A: bool,
+
+    /// STUNT_56A - Star Forge Destroyed Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_56A_unlim: bool,
+
+    /// STUNT_57A - The Sith are Defeated Cutscene
+    #[default = false]
+    pub STUNT_57A: bool,
+
+    /// STUNT_57A - The Sith are Defeated Cutscene Unlimited Splits
+    #[default = false]
+    pub STUNT_57A_unlim: bool,
+
+    /// Bastilla Saved
     #[default = false]
     pub BastilaSaved: bool,
 
